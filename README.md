@@ -1,7 +1,3 @@
-Aqui está uma versão do README com um toque mais humano e menos formal:
-
----
-
 # Smart City
 
 Bem-vindo à nossa API para gestão de segurança em cidades inteligentes! 🚀
