@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Downloads\\Projetos\\live\\SmartCitySecurity.csproj": {}
+    "C:\\Users\\Sara bubu lol\\Downloads\\Projetos (1)\\Projetos\\live\\SmartCitySecurity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Downloads\\Projetos\\live\\SmartCitySecurity.csproj": {
+    "C:\\Users\\Sara bubu lol\\Downloads\\Projetos (1)\\Projetos\\live\\SmartCitySecurity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Downloads\\Projetos\\live\\SmartCitySecurity.csproj",
+        "projectUniqueName": "C:\\Users\\Sara bubu lol\\Downloads\\Projetos (1)\\Projetos\\live\\SmartCitySecurity.csproj",
         "projectName": "SmartCitySecurity",
-        "projectPath": "C:\\Users\\User\\Downloads\\Projetos\\live\\SmartCitySecurity.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Downloads\\Projetos\\live\\obj\\",
+        "projectPath": "C:\\Users\\Sara bubu lol\\Downloads\\Projetos (1)\\Projetos\\live\\SmartCitySecurity.csproj",
+        "packagesPath": "C:\\Users\\Sara bubu lol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sara bubu lol\\Downloads\\Projetos (1)\\Projetos\\live\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Sara bubu lol\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -98,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
