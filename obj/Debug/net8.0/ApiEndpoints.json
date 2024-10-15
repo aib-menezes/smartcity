@@ -1,15 +1,15 @@
 [
   {
-    "ContainingType": "SmartCitySecurity.Controllers.RecursosPoliciaisController",
-    "Method": "GetRecursosPoliciais",
-    "RelativePath": "api/RecursosPoliciais",
+    "ContainingType": "SmartCitySecurity.Controllers.CrimesController",
+    "Method": "GetCrimes",
+    "RelativePath": "api/Crimes",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[SmartCitySecurity.Models.RecursosPoliciais, SmartCitySecurity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[SmartCitySecurity.Models.ModeloCrime, SmartCitySecurity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -18,6 +18,105 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "SmartCitySecurity.Controllers.CrimesController",
+    "Method": "PostCrime",
+    "RelativePath": "api/Crimes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "crime",
+        "Type": "SmartCitySecurity.Models.ModeloCrime",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SmartCitySecurity.Models.ModeloCrime",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SmartCitySecurity.Controllers.CrimesController",
+    "Method": "GetCrime",
+    "RelativePath": "api/Crimes/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SmartCitySecurity.Models.ModeloCrime",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SmartCitySecurity.Controllers.CrimesController",
+    "Method": "PutCrime",
+    "RelativePath": "api/Crimes/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "crime",
+        "Type": "SmartCitySecurity.Models.ModeloCrime",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartCitySecurity.Controllers.CrimesController",
+    "Method": "DeleteCrime",
+    "RelativePath": "api/Crimes/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartCitySecurity.Controllers.RecursosPoliciaisController",
+    "Method": "GetRecursosPoliciais",
+    "RelativePath": "api/RecursosPoliciais",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "SmartCitySecurity.Controllers.RecursosPoliciaisController",
@@ -33,17 +132,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "SmartCitySecurity.Models.RecursosPoliciais",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "SmartCitySecurity.Controllers.RecursosPoliciaisController",
@@ -59,17 +148,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "SmartCitySecurity.Models.RecursosPoliciais",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "SmartCitySecurity.Controllers.RecursosPoliciaisController",

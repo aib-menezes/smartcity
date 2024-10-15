@@ -19,7 +19,7 @@ namespace SmartCitySecurity.Controllers
 
         // GET: api/RecursosPoliciais
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<RecursosPoliciais>>> GetRecursosPoliciais()
+        public async Task<IActionResult> GetRecursosPoliciais()
         {
             var recursos = await _recursoService.ListarRecursos();
             return Ok(recursos);
@@ -27,13 +27,13 @@ namespace SmartCitySecurity.Controllers
 
         // GET: api/RecursosPoliciais/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<RecursosPoliciais>> GetRecursosPoliciais(int id)
+        public async Task<IActionResult> GetRecursosPoliciais(int id)
         {
             var recurso = await _recursoService.ObterRecursoPorId(id);
 
             if (recurso == null)
             {
-                return NotFound();
+                return NotFound(new { message = "Recurso policial não encontrado." });
             }
 
             return Ok(recurso);
@@ -41,22 +41,40 @@ namespace SmartCitySecurity.Controllers
 
         // POST: api/RecursosPoliciais
         [HttpPost]
-        public async Task<ActionResult<RecursosPoliciais>> PostRecursosPoliciais(RecursosPoliciais recurso)
+        public async Task<IActionResult> PostRecursosPoliciais([FromBody] RecursosPoliciais recurso)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             await _recursoService.CriarRecurso(recurso);
             return CreatedAtAction(nameof(GetRecursosPoliciais), new { id = recurso.RecursoId }, recurso);
         }
 
         // PUT: api/RecursosPoliciais/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutRecursosPoliciais(int id, RecursosPoliciais recurso)
+        public async Task<IActionResult> PutRecursosPoliciais(int id, [FromBody] RecursosPoliciais recurso)
         {
             if (id != recurso.RecursoId)
             {
-                return BadRequest();
+                return BadRequest(new { message = "O ID do recurso não corresponde ao fornecido." });
             }
 
-            await _recursoService.AtualizarRecurso(recurso);
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            try
+            {
+                await _recursoService.AtualizarRecurso(recurso);
+            }
+            catch (KeyNotFoundException)
+            {
+                return NotFound(new { message = "Recurso policial não encontrado." });
+            }
+
             return NoContent();
         }
 
@@ -67,7 +85,7 @@ namespace SmartCitySecurity.Controllers
             var recurso = await _recursoService.ObterRecursoPorId(id);
             if (recurso == null)
             {
-                return NotFound();
+                return NotFound(new { message = "Recurso policial não encontrado." });
             }
 
             await _recursoService.DeletarRecurso(id);
