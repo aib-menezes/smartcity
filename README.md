@@ -74,3 +74,5 @@ Quer garantir que tudo está funcionando? Execute os testes unitários com este 
 Ah, e não se esqueça de conferir a documentação da API! Você pode acessá-la através da interface do Swagger em:
 
 [Swagger UI](http://localhost:5095/index.html)
+
+![](/assets/images/swagger.png)
