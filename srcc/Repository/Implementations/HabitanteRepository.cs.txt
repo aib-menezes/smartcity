@@ -1,0 +1,58 @@
+using SmartCitySecurity.Data.Contexts;
+using SmartCitySecurity.Interfaces;
+using SmartCitySecurity.Models;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace SmartCitySecurity.Implementations
+{
+    public class HabitanteRepository : IHabitanteRepository
+    {
+        private readonly DatabaseContext _context;
+
+        public HabitanteRepository(DatabaseContext context)
+        {
+            _context = context;
+        }
+
+        // Obter todos os habitantes
+        public IEnumerable<Habitante> GetAll()
+        {
+            return _context.Habitantes.ToList();
+        }
+
+        // Obter habitante por ID
+        public Habitante GetById(int id)
+        {
+            return _context.Habitantes.FirstOrDefault(h => h.Id == id);
+        }
+
+        // Adicionar um novo habitante
+        public void Add(Habitante habitante)
+        {
+            _context.Habitantes.Add(habitante);
+        }
+
+        // Atualizar um habitante existente
+        public void Update(Habitante habitante)
+        {
+            _context.Habitantes.Update(habitante);
+        }
+
+        // Deletar habitante pelo ID
+        public void Delete(int id)
+        {
+            var habitante = _context.Habitantes.FirstOrDefault(h => h.Id == id);
+            if (habitante != null)
+            {
+                _context.Habitantes.Remove(habitante);
+            }
+        }
+
+        // Salvar as mudanças
+        public void Save()
+        {
+            _context.SaveChanges();
+        }
+    }
+}
