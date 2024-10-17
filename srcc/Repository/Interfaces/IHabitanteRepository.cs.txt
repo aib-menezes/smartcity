@@ -1,0 +1,23 @@
+namespace SmartCitySecurity.Interfaces
+{
+    public interface IHabitanteRepository
+    {
+        // Método para obter todos os habitantes
+        IEnumerable<Habitante> GetAll();
+
+        // Método para obter um habitante por ID
+        Habitante GetById(int id);
+
+        // Método para adicionar um novo habitante
+        void Add(Habitante habitante);
+
+        // Método para atualizar um habitante existente
+        void Update(Habitante habitante);
+
+        // Método para deletar um habitante pelo ID
+        void Delete(int id);
+
+        // Método para salvar as mudanças
+        void Save();
+    }
+}
