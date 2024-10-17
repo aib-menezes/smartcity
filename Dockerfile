@@ -1,23 +1,31 @@
-FROM maven:3.9.8-eclipse-temurin-21 AS build
+# Etapa de construção
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 
-RUN mkdir /opt/app
+# Cria um diretório para o aplicativo
+WORKDIR /app
 
-COPY . /opt/app
+# Copia o arquivo .csproj e restaura as dependências
+COPY *.csproj ./
+RUN dotnet restore
 
-WORKDIR /opt/app
+# Copia o restante do código-fonte e compila o aplicativo
+COPY . ./
+RUN dotnet publish -c Release -o out
 
-RUN mvn clean package
+# Etapa de execução
+FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS runtime
 
-FROM eclipse-temurin:21-jre-alpine
+# Cria um diretório para o aplicativo
+WORKDIR /app
 
-RUN mkdir /opt/app
+# Copia o aplicativo publicado da etapa de construção
+COPY --from=build /app/out .
 
-COPY --from=build  /opt/app/target/app.jar /opt/app/app.jar
+# Define a variável de ambiente
+ENV ASPNETCORE_ENVIRONMENT=Production
 
-WORKDIR /opt/app
-
-ENV PROFILE=prd
-
+# Expõe a porta 8080 que o aplicativo irá escutar
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-Dspring.profiles.active=${PROFILE}", "-jar", "app.jar"]
+# Define o comando de entrada
+ENTRYPOINT ["dotnet", "SmartCitySecurity.dll"]
