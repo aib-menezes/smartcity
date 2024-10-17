@@ -26,34 +26,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\User\Downloads\Projetos (1) (1)\Projetos (1)\Projetos\live
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/User/Downloads/Projetos (1) (1)/Projetos (1)/Projetos/live/Downloads/Projetos (1) (1)/Projetos (1)/Projetos/live/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = RG93bmxvYWRzXFByb2pldG9zICgxKSAoMSlcUHJvamV0b3MgKDEpXFByb2pldG9zXGxpdmVcVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/Downloads/Projetos (1) (1)/Projetos (1)/Projetos/live/Downloads/Projetos (1) (1)/Projetos (1)/Projetos/live/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = RG93bmxvYWRzXFByb2pldG9zICgxKSAoMSlcUHJvamV0b3MgKDEpXFByb2pldG9zXGxpdmVcVmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/Downloads/Projetos (1) (1)/Projetos (1)/Projetos/live/Downloads/Projetos (1) (1)/Projetos (1)/Projetos/live/Views/Modelo/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = RG93bmxvYWRzXFByb2pldG9zICgxKSAoMSlcUHJvamV0b3MgKDEpXFByb2pldG9zXGxpdmVcVmlld3NcTW9kZWxvXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/Downloads/Projetos (1) (1)/Projetos (1)/Projetos/live/Downloads/Projetos (1) (1)/Projetos (1)/Projetos/live/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = RG93bmxvYWRzXFByb2pldG9zICgxKSAoMSlcUHJvamV0b3MgKDEpXFByb2pldG9zXGxpdmVcVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/Downloads/Projetos (1) (1)/Projetos (1)/Projetos/live/Downloads/Projetos (1) (1)/Projetos (1)/Projetos/live/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = RG93bmxvYWRzXFByb2pldG9zICgxKSAoMSlcUHJvamV0b3MgKDEpXFByb2pldG9zXGxpdmVcVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/Downloads/Projetos (1) (1)/Projetos (1)/Projetos/live/Downloads/Projetos (1) (1)/Projetos (1)/Projetos/live/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = RG93bmxvYWRzXFByb2pldG9zICgxKSAoMSlcUHJvamV0b3MgKDEpXFByb2pldG9zXGxpdmVcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/Downloads/Projetos (1) (1)/Projetos (1)/Projetos/live/Downloads/Projetos (1) (1)/Projetos (1)/Projetos/live/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = RG93bmxvYWRzXFByb2pldG9zICgxKSAoMSlcUHJvamV0b3MgKDEpXFByb2pldG9zXGxpdmVcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/User/Downloads/Projetos (1) (1)/Projetos (1)/Projetos/live/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -81,10 +53,6 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/User/Downloads/Projetos (1) (1)/Projetos (1)/Projetos/live/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/Downloads/Projetos (1) (1)/Projetos (1)/Projetos/live/Downloads/Projetos (1) (1)/Projetos (1)/Projetos/live/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = RG93bmxvYWRzXFByb2pldG9zICgxKSAoMSlcUHJvamV0b3MgKDEpXFByb2pldG9zXGxpdmVcVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-r54qf7tz2g
 
 [C:/Users/User/Downloads/Projetos (1) (1)/Projetos (1)/Projetos/live/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s

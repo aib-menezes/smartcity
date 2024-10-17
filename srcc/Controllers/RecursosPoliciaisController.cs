@@ -10,6 +10,7 @@ namespace SmartCitySecurity.Controllers
     [ApiController]
     public class RecursosPoliciaisController : ControllerBase
     {
+        
         private readonly IRecursoService _recursoService;
 
         public RecursosPoliciaisController(IRecursoService recursoService)
