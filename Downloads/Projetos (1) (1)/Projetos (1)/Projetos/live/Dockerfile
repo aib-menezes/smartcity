@@ -1,23 +1,25 @@
-FROM maven:3.9.8-eclipse-temurin-21 AS build
 
-RUN mkdir /opt/app
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 
-COPY . /opt/app
+WORKDIR /app
 
-WORKDIR /opt/app
+COPY *.csproj ./
 
-RUN mvn clean package
+RUN dotnet restore
 
-FROM eclipse-temurin:21-jre-alpine
+COPY . ./
+RUN dotnet publish -c Release -o out
 
-RUN mkdir /opt/app
 
-COPY --from=build  /opt/app/target/app.jar /opt/app/app.jar
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
 
-WORKDIR /opt/app
 
-ENV PROFILE=prd
+WORKDIR /app
+
+COPY --from=build /app/out .
+
+ENV ASPNETCORE_ENVIRONMENT=Production
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-Dspring.profiles.active=${PROFILE}", "-jar", "app.jar"]
+ENTRYPOINT ["dotnet", "SmartCitySecurity.dll"]
