@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartCitySecurity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9961c5bf5b38d08557076ac5b0caa0c5f4553427")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87ee435fb706790ee9f4c4e39b2fd4d5869136ee")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartCitySecurity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartCitySecurity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
