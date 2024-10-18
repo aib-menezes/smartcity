@@ -468,15 +468,6 @@ C:\Users\User\Downloads\Projetos (1) (1)\Projetos (1)\Projetos\live\obj\Debug\ne
 C:\Users\User\Downloads\Projetos (1) (1)\Projetos (1)\Projetos\live\obj\Debug\net8.0\SmartCitySecurity.pdb
 C:\Users\User\Downloads\Projetos (1) (1)\Projetos (1)\Projetos\live\obj\Debug\net8.0\SmartCitySecurity.genruntimeconfig.cache
 C:\Users\User\Downloads\Projetos (1) (1)\Projetos (1)\Projetos\live\obj\Debug\net8.0\ref\SmartCitySecurity.dll
-C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\obj\Debug\net8.0\SmartCitySecurity.csproj.AssemblyReference.cache
-C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\obj\Debug\net8.0\SmartCitySecurity.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\obj\Debug\net8.0\SmartCitySecurity.AssemblyInfoInputs.cache
-C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\obj\Debug\net8.0\SmartCitySecurity.AssemblyInfo.cs
-C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\obj\Debug\net8.0\SmartCitySecurity.csproj.CoreCompileInputs.cache
-C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\obj\Debug\net8.0\SmartCitySecurity.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\obj\Debug\net8.0\SmartCitySecurity.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\obj\Debug\net8.0\SmartCitySecurity.RazorAssemblyInfo.cache
-C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\obj\Debug\net8.0\SmartCitySecurity.RazorAssemblyInfo.cs
 C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\bin\Debug\net8.0\appsettings.json
 C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\bin\Debug\net8.0\srcc\appsettings.Development.json
 C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\bin\Debug\net8.0\SmartCitySecurity.staticwebassets.runtime.json
@@ -695,6 +686,16 @@ C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\bin\Debug
 C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\bin\Debug\net8.0\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
 C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\bin\Debug\net8.0\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
 C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\obj\Debug\net8.0\SmartCitySecurity.csproj.AssemblyReference.cache
+C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\obj\Debug\net8.0\SmartCitySecurity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\obj\Debug\net8.0\SmartCitySecurity.AssemblyInfoInputs.cache
+C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\obj\Debug\net8.0\SmartCitySecurity.AssemblyInfo.cs
+C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\obj\Debug\net8.0\SmartCitySecurity.csproj.CoreCompileInputs.cache
+C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\obj\Debug\net8.0\SmartCitySecurity.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\obj\Debug\net8.0\SmartCitySecurity.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\obj\Debug\net8.0\SmartCitySecurity.RazorAssemblyInfo.cache
+C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\obj\Debug\net8.0\SmartCitySecurity.RazorAssemblyInfo.cs
+C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\obj\Debug\net8.0\SmartCitySecurity.sourcelink.json
 C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Sara bubu lol\Downloads\smartcity-developp\smartcity-developp\obj\Debug\net8.0\staticwebassets\msbuild.SmartCitySecurity.Microsoft.AspNetCore.StaticWebAssets.props
