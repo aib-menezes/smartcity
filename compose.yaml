@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 services:
   db:
     container_name: mysql
@@ -18,25 +17,4 @@ services:
       - DATABASE_USER=root
       - DATABASE_PWD=root_pass
     depends_on:
-=======
-services:
-  db:
-    container_name: mysql
-    image: "mysql"
-    ports:
-      - "3306:3306"
-    environment:
-      - MYSQL_ROOT_PASSWORD=root_pass
-
-  api:
-    build: .
-    ports:
-      - "8080:8080"
-    environment:
-      - PROFILE=dev
-      - DATABASE_URL=jdbc:mysql://db:3306/api?createDatabaseIfNotExist=true
-      - DATABASE_USER=root
-      - DATABASE_PWD=root_pass
-    depends_on:
->>>>>>> developp
-     - db
+      - db
