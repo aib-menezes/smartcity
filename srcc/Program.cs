@@ -5,7 +5,7 @@ using SmartCitySecurity.Data.Repository;
 using SmartCitySecurity.srcc.Repository.Implementations;
 using SmartCitySecurity.srcc.Services;
 using Microsoft.OpenApi.Models;
-
+using SmartCitySecurity.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,14 +21,16 @@ builder.Services.AddDbContext<DatabaseContext>(
 // Registro dos repositórios
 builder.Services.AddScoped<ICrimeRepository, CrimeRepository>();
 builder.Services.AddScoped<ICrimeService, CrimeService>();
-builder.Services.AddScoped<ICrimeRepository, CrimeRepository>();
 builder.Services.AddScoped<IRecursoPolicialRepository, RecursoPolicialRepository>();
+
+// Corrigindo o registro do serviço
+builder.Services.AddScoped<IRecursoService, RecursoService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddEndpointsApiExplorer(); // Adiciona suporte para explorar endpoints
-builder.Services.AddSwaggerGen(c => // Adiciona Swagger
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Smart City Security API", Version = "v1" });
 });
@@ -54,9 +56,8 @@ app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "API V1");
-    c.RoutePrefix = string.Empty; // Isso faz o Swagger ser acessível na raiz da aplicação
+    c.RoutePrefix = string.Empty;
 });
-
 
 app.MapControllerRoute(
     name: "default",

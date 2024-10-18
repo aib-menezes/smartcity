@@ -52,7 +52,8 @@ Vamos lá! Aqui estão os passos para você colocar a aplicação para rodar:
    Agora, é hora de colocar tudo para funcionar! Execute o seguinte comando:
 
    ```sh
-   docker compose up --build
+   docker-compose up --build
+
    ```
 
    Isso vai construir as imagens necessárias e iniciar os serviços que definimos.

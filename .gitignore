@@ -1,9 +1,15 @@
+# Ignorar arquivos de ajuda
 HELP.md
+
+# Ignorar diretórios de build
+bin/
+obj/
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+# ### IDEs ###
 ### STS ###
 .apt_generated
 .classpath
@@ -21,10 +27,10 @@ target/
 
 ### NetBeans ###
 /nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
@@ -34,4 +40,27 @@ build/
 
 ### Visual Studio ###
 .vs/
+
+# Ignorar arquivos específicos
+*.pdf
+*.xlsx
+*.xls
+*.zip
+*.zs
+*.jpeg
+*.jpg
+*.png
+*.gif
+
+# Ignorar arquivos temporários
+*.cache
+*.dll
+*.exe
+*.pdb
+*.json
+
+# Ignorar arquivos de backup
+*- Backup.*
+
+
 
