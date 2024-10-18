@@ -5,7 +5,7 @@ FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /app
 
 # Copia o arquivo .csproj e restaura as dependências
-COPY *.csproj ./
+COPY SmartCitySecurity.csproj ./
 RUN dotnet restore
 
 # Copia o restante do código-fonte e compila o aplicativo
